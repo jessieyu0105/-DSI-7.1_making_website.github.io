@@ -59,7 +59,7 @@ My code page is [here](code.html).
 
 # 4. Build website & host on Github
 
-* **R studio中`Build` button** (**Note：每次更新后都要`Rebuild Website`**)： 
+* **R studio中`Build` button** (**Note：每次更新→knit→commit→push后都要`Rebuild Website`**)： 
 
 <img src = "images/build_website.png" style = "width:105%">
 
