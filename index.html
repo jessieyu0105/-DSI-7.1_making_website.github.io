@@ -11,7 +11,7 @@
 
 
 
-<title>Holy cow!</title>
+<title>How to make websites</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -288,13 +288,13 @@ div.tocify {
   <a href="about.html">About</a>
 </li>
 <li>
-  <a href="mailto:&lt;you@youremail.com&gt;">
+  <a href="mailto:&lt;jy2944@cumc.columbia.edu&gt;">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="http://github.com/&lt;YOUR_GH_NAME&gt;/">
+  <a href="http://github.com/&lt;jessieyu0105&gt;/">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -308,30 +308,84 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Holy cow!</h1>
+<h1 class="title toc-ignore">How to make websites</h1>
 
 </div>
 
 
-<div id="i-have-a-webpage" class="section level3">
-<h3>I have a webpage!</h3>
-<p>And I can put all kinds of stuff on it!</p>
-<p>I can add additional text.</p>
-<p>I <em>could</em> write some code but i’m not going to.</p>
+<div id="create-a-repo-on-github" class="section level1">
+<h1>1. Create a repo on Github</h1>
+<ul>
+<li><strong>Call it <code>website_name.github.io</code></strong>.</li>
+</ul>
+<p>My Repo: <code>jessieyu0105/DSI_7.1_making_website.github.io</code></p>
+<ul>
+<li><strong>Create a local R project/directory for this repo</strong>.</li>
+</ul>
 </div>
-<div id="add-some-links" class="section level3">
-<h3>Add some links</h3>
+<div id="basic-elements" class="section level1">
+<h1>2. Basic elements</h1>
+<p>Copy the files in <code>website_template</code> (D:/[CU_MS]/BIST 8105 - Data Science I/[R program]/[DSI]_7.1-Making websites.github.io/websote_template) to local directory</p>
+<ul>
+<li><p><code>index.Rmd</code>: 主页</p></li>
+<li><p><code>about.Rmd</code>: say a bit about the site – <strong>how it was made, where it’s hosted, where the source code can be found</strong>. Details about the <strong>R package versions</strong> that you used.</p></li>
+<li><p><code>_site.yml</code>：令<code>index.Rmd</code>生成的<code>index.html</code>更像website的关键</p></li>
+</ul>
+</div>
+<div id="common-contents" class="section level1">
+<h1>3. Common contents</h1>
+<div id="add-links" class="section level3">
+<h3>Add links</h3>
+<ul>
+<li><strong>在<code>about.Rmd</code>中编辑, knit生成<code>about.html</code></strong></li>
+</ul>
 <p>I like <a href="https://www.google.com">to look for code on the internet</a>.</p>
 <p>I can link directly to my <a href="about.html">about page</a>.</p>
 </div>
-<div id="picture-of-my-dog" class="section level3">
-<h3>Picture of my dog</h3>
+<div id="add-picture" class="section level3">
+<h3>Add picture</h3>
+<ul>
+<li><strong>在local directory中构建<code>images</code>文件夹，图存于其中</strong></li>
+</ul>
 <p>Ain’t she great:</p>
 <p><img src = "images/heres_my_dog.png" style = "width:105%"></p>
 </div>
-<div id="i-can-add-code" class="section level3">
-<h3>I can add code</h3>
+<div id="add-code" class="section level3">
+<h3>Add code</h3>
+<ul>
+<li><strong>在local directory中构建<code>code.Rmd</code>, knit生成<code>code.html</code></strong></li>
+</ul>
 <p>My code page is <a href="code.html">here</a>.</p>
+</div>
+<div id="add-icons" class="section level3">
+<h3>Add Icons</h3>
+<p><a href="https://fontawesome.com/icons?from=io">icons come from font awesome</a></p>
+</div>
+</div>
+<div id="build-website-host-on-github" class="section level1">
+<h1>4. Build website &amp; host on Github</h1>
+<ul>
+<li><strong>R studio中<code>Build</code> button</strong>：</li>
+</ul>
+<p><img src = "images/build_website.png" style = "width:105%"></p>
+<ul>
+<li><strong>Log in to GitHub, find the repo, and navigate to settings, 下拉，set the GitHub pages source to the master branch</strong>, 网址就是绿色框中显示的那一串：</li>
+</ul>
+<p><img src = "images/host_on_Github.JPG" style = "width:105%"></p>
+<div id="change-default-theme" class="section level3">
+<h3>Change default theme</h3>
+<p><a href="dhttps://bootswatch.com/">add a default theme to your YAML</a></p>
+</div>
+</div>
+<div id="websites-about-projects" class="section level1">
+<h1>Websites about projects</h1>
+<p>As noted, the preceding example is about a personal website but illustrates useful ideas. If you’re making a website about a data science project, I recommend including:</p>
+<ul>
+<li>A landing page giving a broad overview of the project</li>
+<li>A page (or pages) about the data wrangling, including the raw data if appropriate</li>
+<li>Separate pages for each distinct analysis, possibly organized using menus</li>
+<li>R and package versions used in the analyses</li>
+</ul>
 </div>
 
 
